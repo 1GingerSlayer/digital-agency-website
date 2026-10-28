@@ -1,0 +1,46 @@
+/*
+    Color palette
+    https://coolors.co/fff05a-ffd25a-ffaa5a-ff785a-191919
+*/
+
+/* Text colors */
+.text-corn {
+    color: #fff05aff;
+}
+
+.text-orange-yellow-crayola {
+    color: #ffd25aff;
+}
+
+.text-rajah {
+    color: #ffaa5aff;
+}
+
+.text-coral {
+    color: #ff785aff;
+}
+
+.text-eerie-black {
+    color: #191919ff;
+}
+
+/* Background colors */
+.background-corn {
+    background-color: #fff05aff;
+}
+
+.background-orange-yellow-crayola {
+    background-color: #ffd25aff;
+}
+
+.background-rajah {
+    background-color: #ffaa5aff;
+}
+
+.background-coral {
+    background-color: #ff785aff;
+}
+
+.background-eerie-black {
+    background-color: #191919ff;
+}
