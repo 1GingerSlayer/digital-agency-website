@@ -1,0 +1,121 @@
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#navigation {
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    padding: 24px 0;
+    -webkit-box-shadow: 0px 1px 21px 5px rgba(0,0,0,0.23);
+    box-shadow: 0px 1px 21px 5px rgba(0,0,0,0.23);
+}
+
+#navigation-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-logo {
+    height: 46px;
+}
+
+.navigation-right-side {
+    display: flex;
+    align-items: center;
+}
+
+.view-mode-switch-wrapper {
+    margin-left: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.view-mode-switch {
+    display: none;
+    cursor: pointer;
+    height: 24px;
+}
+
+.view-mode-switch.active {
+    display: inline-block;
+}
+
+.navigation-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.15s ease-in-out;
+}
+
+.navigation-link:hover {
+    transform: translateY(-2px);
+}
+
+.navigation-link.active {
+    color: #ff785aff !important;
+}
+
+.navigation-link + .navigation-link {
+    margin-left: 20px;
+}
+
+#open-menu {
+    display: none;
+}
+
+#open-menu:hover {
+    cursor: pointer;
+}
+
+#open-menu div {
+    height: 2px;
+    width: 32px;
+    border-radius: 3000px;
+    transition: all 0.1s ease-in-out;
+}
+
+#open-menu div + div {
+    margin-top: 8px;
+}
+
+#open-menu.active > div:first-of-type {
+    transform: rotate(45deg);
+}
+
+#open-menu.active div:last-of-type {
+    transform: rotate(-45deg) translateX(8px) translateY(-6px);
+}
+
+@media screen and (max-width: 576px) {
+    #open-menu {
+        display: block;
+    }
+
+    .navigation-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        background-color: white;
+        padding: 16px 20px;
+
+        box-shadow: 0px 7px 22px -11px rgba(0,0,0,0.92);
+        flex-direction: column;
+    }
+
+    .navigation-link + .navigation-link {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .navigation-links.active {
+        display: flex;
+    }
+}
