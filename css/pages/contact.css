@@ -1,0 +1,85 @@
+.hero {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%), url('./../../images/contact-hero.jpg');
+    background-position: left;
+}
+
+@media screen and (max-width: 991px) {
+    .hero {
+        background-position: right;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0) 100%), url('./../../images/contact-hero.jpg');
+    }
+}
+
+#contact-form {
+    margin-top: 48px;
+}
+
+.contact-form-section {
+    margin-bottom: 42px;
+}
+
+.contact-form-section>h4+p {
+    margin-bottom: 32px;
+}
+
+.contact-us-service-type-note {
+    display: none;
+    margin-top: 12px;
+}
+
+.contact-us-service-type-note img {
+    margin-left: 24px;
+}
+
+#contact-form-success {
+    margin-top: 48px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+}
+
+#contact-form-success .title {
+    display: flex;
+    align-items: center;
+}
+
+#contact-form-success .title img {
+    height: 32px;
+    margin-left: 12px;
+}
+
+#contact-form-success p {
+    margin-bottom: 8px;
+}
+
+#contact-form-success p:last-child {
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    #contact-form {
+        margin-top: 24px;
+    }
+
+    .contact-form-section {
+        margin-bottom: 24px;
+    }
+
+    .contact-form-section>h4+p {
+        margin-bottom: 16px;
+    }
+
+    .contact-us-service-type-note img {
+        margin-left: 12px;
+    }
+
+    #contact-form-success .title img {
+        height: 24px;
+    }
+}
